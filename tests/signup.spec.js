@@ -80,9 +80,9 @@ const password = 'Password7$#';
   await page.getByRole('textbox', { name: 'Certification Details (' }).fill('IELTS');
 
   // file uploads
-  await page.locator('input[type="file"]').first().setInputFiles('sushmitaQA.pdf');
-  await page.locator('input[type="file"]').nth(1).setInputFiles('sushmitaQA.pdf');
-  await page.getByRole('button', { name: 'Submit' }).click();
+await page.locator('input[type="file"]').first().setInputFiles('Sushmita_QA.pdf');
+await page.locator('input[type="file"]').nth(1).setInputFiles('Sushmita_QA.pdf');
+await page.getByRole('button', { name: 'Submit' }).click();
 
   // Payment details 
   await page.goto('https://authorized-partner.vercel.app/admin/profile');
